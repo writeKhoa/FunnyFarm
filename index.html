@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Farm</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css" integrity="sha512-AGmpdsTqvAh2GvTWzVhhJ9VqQb1eAXwOM7uiWtv0DzcnGaGWy98K51z2cK5OG3gp4NB1HbMaD7p0MeO9kE7E3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav--left">
+                <a href="./index.html" >
+                    <h2 class="nav__logo">
+                        FunnyFarm
+                    </h2>
+                </a>
+            </div>
+            <div class="nav--right">
+                <ul class="nav__list">
+                    <button class="off btn mobile"><img src="./icon/fi-x.svg" alt="" class="close-svg"></button>
+                    <li class="nav__item active"><a href="#">Trang chủ</a></li>
+                    <li class="nav__item"><a href="#">Giỏ hàng</a></li>
+                    <li class="nav__item contact dropdown">
+                        <div>Liên hệ <span class="arrow down"></span></div>
+                        <ul class="list-contact">
+                            <li class="item-contact"><a href="#">Facebook</a></li>
+                            <li class="item-contact"><a href="#">Zalo</a></li>
+                            <li class="item-contact"><a href="#">Instagram</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item dropdown"><a href="#">Người dùng</a></li>
+                </ul>
+                <button class="btn menu mobile" id="menu">
+                    <span class="show"><img class="show-svg" src="./icon/fi-align-center.svg" alt=""></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Typing Effect -->
+    <p class="typing-effect"></p>
+    <!-- slide img -->
+    <div class="slide-img">
+        <div class="container">
+            <div class="slide__frame-img"> 
+                <img src="./img/a1.jpg" alt="" class="slide__img active">
+                <img src="./img/a2.jpg" alt="" class="slide__img">
+                <img src="./img/a3.jpg" alt="" class="slide__img">
+            </div>
+            <div class="slide__btn">
+                <button class="slide__btn--left btn">
+                    <span class="arrow left"></span>
+                </button>
+                <button class="slide__btn--right btn">
+                    <span class="arrow right"></span>
+                </button>
+            </div>
+            <div class="slide__circle">
+                <div class="slide-circle active"></div>
+                <div class="slide-circle"></div>
+                <div class="slide-circle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- product -->
+    <div id="buy" class="buy container">
+        <div class="product">
+            <div class="product__card">
+                <img src="./img/v1.jpg" alt="" class="product__img" data-name="1">
+                <div class="buy-info">
+                    <h3 class="product__title">Rau cải mầm</h3>
+                    <p class="product__price">Giá: 50k/1kg</p>
+                </div>
+                <div class="product__bottom">
+                    <button class="btn btn--buy">
+                        Mua ngay
+                    </button>
+                    <button class="btn btn--add-to-cart">
+                        Thêm vào giỏ hàng +
+                    </button>
+                </div>
+            </div>
+            <div class="product__card">
+                <img src="./img/v2.jpg" alt="" class="product__img" data-name="1">
+                <div class="buy-info">
+                    <h3 class="product__title">Rau muống mầm</h3>
+                    <p class="product__price">Giá: 50k/1kg</p>
+                </div>
+                <div class="product__bottom">
+                    <button class="btn btn--buy">
+                        Mua ngay
+                    </button>
+                    <button class="btn btn--add-to-cart">
+                        Thêm vào giỏ hàng +
+                    </button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- product add to cart -->
+    <div class="container-cart-preview">
+        <div class="cart-preview">
+            <button class="close-preview btn">
+                <img src="./icon/fi-x.svg" alt="">
+            </button>
+            <img class="cart-preview__img" src="./img/v1.jpg" alt="">
+            <h3 class="title">Rau cải mầm</h3>
+            <div class="input-data">
+                <label id="lable-quantity" for="quantity">Chọn số lượng</label>
+                <input type="number" name="quantity" id="quantity" value="1" min="1">
+            </div>
+            <button class="add btn">Thêm vào giỏ hàng</button>
+        </div>
+        <div class="cart-preview">
+            <button class="close-preview btn">
+                <img src="./icon/fi-x.svg" alt="">
+            </button>
+            <img class="cart-preview__img" src="./img/v2.jpg" alt="">
+            <h3 class="title">Rau muống mầm</h3>
+            <div class="input-data">
+                <label id="lable-quantity" for="quantity">Chọn số lượng</label>
+                <input type="number" name="quantity" id="quantity" value="1" min="1">
+            </div>
+            <button class="add btn">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-contact">
+                <h3>Liên hệ</h3>
+                <ul class="footer-contact">
+                    <li>Email: khoawrite@gmail.com</li>
+                    <li>Sđt: 0357235069</li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h3>Socials</h3>
+                <ul class="list-socials">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Zalo</a></li>
+                </ul>
+            </div>
+            <div class="footer-cooperate">
+                <h3>Hợp tác</h3>
+                <ul class="list-cooperate">
+                    <li><a href="#">Ứng tuyển làm nhân viên</a></li>
+                    <li><a href="#">Trở thành đại lí</a></li>
+                    <li><a href="#">Liên hệ nhượng quyền</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Copyright © 2022 FunnyFarm. All rights reserved.
+        </div>
+    </footer>
+
+    <button class="back-to-top btn">
+        <span class="arrow up"></span>
+    </button>
+
+    <script defer src="./js/index.js"></script>
+</body>
+</html>
